@@ -7,6 +7,8 @@ import Card from "./components/Card";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingStatus } from "./components/SavingsStatus";
 import styles from "./app.module.css";
+import { Transactions } from "./components/Transactions";
+import { Accounts } from './components/Accounts';
 
 function App() {
   return (
@@ -35,12 +37,20 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Movimentação financeira</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>
+                Movimentação financeira
+              </Card.Header>
+              <Card.Body>
+                <Transactions />
+              </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Minhas contas</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>
+                Minhas contas
+              </Card.Header>
+              <Card.Body>
+                <Accounts />
+              </Card.Body>
             </Card>
           </section>
         </div>
